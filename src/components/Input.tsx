@@ -14,6 +14,8 @@ function Input({ value, onChange, onKeyDown }: InputProps) {
   };
   const onKeyDownEnter = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (inputValue && e.key === 'Enter') {
+      e.preventDefault();
+      setInputValue('');
       onKeyDown(e.currentTarget.value);
     }
   };
@@ -23,7 +25,7 @@ function Input({ value, onChange, onKeyDown }: InputProps) {
         type="text"
         value={inputValue}
         onChange={valueChange}
-        onKeyDown={onKeyDownEnter}
+        onKeyPress={onKeyDownEnter}
       />
     </div>
   );
