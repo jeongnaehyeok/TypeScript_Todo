@@ -10,8 +10,6 @@
 
 # production
 /build
-.eslintcache
-react-app-env.d.ts
 
 # misc
 .DS_Store
