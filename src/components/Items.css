@@ -1,0 +1,26 @@
+.items--container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  min-width: 300px;
+  max-width: 50%;
+}
+
+.items--item {
+  display: inline-flex;
+  align-items: center;
+  list-style: none;
+}
+
+.item--delete {
+  color: red;
+}
+
+.items--item > button {
+  border: 0;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  background-color: unset;
+  outline: none;
+}
